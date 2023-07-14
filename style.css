@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* common style start  */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background: #fab758;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+#menu {
+  display: none;
+}
+.sectionWrap {
+  align-items: center;
+  width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+p.sectionSubTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #aab0c5;
+  margin-bottom: 1rem;
+}
+
+h1.sectionTitle {
+  font-size: 2.2rem;
+  color: #343f52;
+}
+/* common style end */
+
+/* header css style start  */
+#header {
+  background: linear-gradient(180deg, #fff8ef, transparent);
+}
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+.logo {
+  width: 10rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lanChange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lanChange select {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+
+.lanChange img {
+  width: 1.5rem;
+}
+.menu ul li a img {
+  width: 1.3rem;
+}
+/* header css style end */
+
+/* banner css style start  */
+.bannerWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  grid-gap: 4rem;
+  justify-content: center;
+  margin: 5rem 0rem;
+}
+
+.bannerImg img {
+  width: 100%;
+}
+
+.bannerText h1 {
+  font-size: 3.1rem;
+  color: #343f52;
+}
+
+.bannerText p {
+  color: #60697b;
+  font-size: 1.5rem;
+  margin: 3rem 0rem;
+}
+/* banner css style end  */
+
+/* what i do style start  */
+
+.whatIdoWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin: 3rem 0rem;
+}
+
+.singleDo {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 20px #f6f6f6;
+  border-radius: 1rem;
+}
+
+.singleDo h3 {
+  font-size: 1.4rem;
+  color: #343f52;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+}
+
+.whatIdoWrap p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #60697b;
+  margin: 0.5rem 0rem;
+  line-height: 29px;
+}
+.learn {
+  margin: 1.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.singleDo a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.singleDo:nth-child(1) a {
+  color: #fbc87f !important;
+}
+.singleDo:nth-child(2) a {
+  color: #e26283 !important;
+}
+.singleDo:nth-child(3) a {
+  color: #45c4a0 !important;
+}
+.singleDo:nth-child(4) a {
+  color: #8caeec !important;
+}
+.learn img {
+  width: 32px;
+}
+/* what i do style end */
+
+/* ANALYZE css style start */
+.analyze {
+  background: linear-gradient(0deg, #fff8ef, transparent);
+}
+.analyzeWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+  margin: 10rem 0rem 0rem;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.analyzeImg img {
+  width: 100%;
+}
+
+.sectionAnalyze {
+  text-align: left;
+  width: 100%;
+}
+.analyzeText p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  color: #60697b;
+  margin: 1.5rem 0rem;
+}
+#analyze input[type='url'] {
+  outline: none;
+  padding: 1rem 1.5rem 1rem;
+  font-size: 1.1rem;
+  background: #fefefe;
+  border: 1px solid rgba(8, 60, 130, 0.07);
+  border-radius: 0.5rem;
+  grid-column: 1 / -2;
+}
+#analyze {
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+}
+
+#analyze input[type='button'] {
+  padding: 0.8rem 2.3rem;
+  font-size: 1.1rem;
+  background: #fab758;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  border: none;
+  outline: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 0 0 0 -1rem;
+  grid-column: 4/-1;
+}
+.analyzeText {
+  width: 100%;
+}
+/* ANALYZE css style end */
+
+/* strategy css style start */
+.strategyWarp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+  margin: 5rem 0rem 10rem;
+  /* align-items: center; */
+  padding-bottom: 3rem;
+}
+.strategyText p {
+  padding-bottom: 1rem;
+}
+.strategyList {
+  display: flex;
+  gap: 2rem;
+  padding: 1.9rem;
+  background: white;
+  box-shadow: 0px 0px 20px 12px #ececec;
+  border-radius: 0.5rem;
+  /* margin-bottom: 4rem; */
+}
+
+.strategyNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #fab758;
+}
+.strategyListText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 29px;
+}
+
+.strategyListText h4 {
+  font-size: 1.2rem;
+  color: #343f52;
+}
+
+.strategyNum span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '';
+  width: 70px;
+  height: 70px;
+  background: #fef3e4;
+  border-radius: 100%;
+}
+.strategyList:nth-child(2) {
+  margin-right: -5rem;
+  margin-left: 5rem;
+}
+.strategyListWrap {
+  display: grid;
+  grid-gap: 3rem;
+}
+/* strategy css style end */
+
+/* why choose us css style start  */
+.whychooseUsImg img {
+  width: 100%;
+}
+
+.whychooseUsWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin: 5rem 0rem;
+}
+
+details summary {
+  color: #fab758;
+  font-size: 1.1rem;
+}
+
+details {
+  margin-bottom: 0.5rem;
+}
+
+details:first-child {
+  margin-top: 1rem;
+}
+details p {
+  line-height: 1.9rem;
+  color: #60697b;
+  margin-left: 1.1rem;
+}
+.wcu {
+  margin-bottom: 1rem;
+}
+/* why choose us css style end */
+
+/* out team css style start */
+.singlePeople img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.singlePeople h3 {
+  font-size: 1.4rem;
+  color: #343f52;
+  line-height: 1.9rem;
+  margin-top: 1rem;
+}
+
+.singlePeople h4 {
+  font-size: 0.9rem;
+  color: #aab0bc;
+  line-height: 24px;
+}
+
+.singlePeople p {
+  font-size: 1.1rem;
+  line-height: 29px;
+  color: #60697b;
+}
+
+.singlePeople {
+  background: white;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px 20px #f6f6f6;
+}
+
+.team {
+  background: #fefefe;
+  margin: 5rem 0rem;
+}
+.socialIcon img {
+  width: 1.5rem;
+}
+
+.socialIcon {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.teamPeopleWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+/* out team css end  */
+
+/* footer css style start  */
+.footer {
+  background-color: #343f52;
+}
+.footerWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 5rem 0rem;
+  grid-gap: 3rem;
+  color: white;
+}
+.col1 p {
+  color: #bccaca;
+  width: 10rem;
+  margin-top: 1rem;
+  line-height: 29px;
+}
+
+.col2 h3,
+.col3 h3,
+.col4 h3 {
+  font-size: 1.3rem;
+  line-height: 29px;
+}
+
+.col2 p,
+.col4 p {
+  line-height: 29px;
+  margin: 1rem 0rem;
+}
+.col2 a {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.col3 a {
+  display: block;
+  color: white;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.footer input[type='text'] {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #3a4557;
+  font-size: 1.1rem;
+}
+
+.footer input[type='button'] {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: white;
+  background: #fab758;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 0 -10px 0;
+  font-size: 1.1rem;
+}
+
+/* footer css style end */

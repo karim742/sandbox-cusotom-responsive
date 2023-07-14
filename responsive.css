@@ -1,0 +1,117 @@
+/* large laptop screen  */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    /* padding: 0rem 1rem; */
+  }
+  .menu ul {
+    gap: 1.1rem;
+  }
+  #analyze {
+    grid-template-columns: repeat(3, 140px);
+  }
+  #analyze input[type='button'] {
+    grid-column: 3 / -1;
+  }
+}
+
+/* tablet or small laptop */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+    /* padding: 0rem 1rem; */
+  }
+  .lanChange {
+    display: none;
+  }
+  .bannerText h1 {
+    font-size: 2.7rem;
+  }
+  .strategyWarp {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .strategyList:nth-child(2) {
+    margin: 0px;
+  }
+}
+
+/* medium device  */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .menu {
+    position: relative;
+  }
+  .menu ul {
+    display: grid;
+    position: absolute;
+    right: -13rem;
+    top: 1rem;
+    background: white;
+    padding: 1rem 2rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.4s;
+  }
+  #menu:hover .menu ul {
+    transform: scaleY(1);
+  }
+  #menu {
+    display: initial;
+  }
+  .sectionWrap {
+    width: 100%;
+  }
+  #analyze {
+    grid-template-columns: repeat(4, 140px);
+  }
+  #analyze input[type='button'] {
+    grid-column: 4 / -1;
+  }
+}
+
+/* small device  */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100% !important;
+    padding: 0rem 1rem !important;
+  }
+  #analyze {
+    grid-template-columns: repeat(3, 140px);
+  }
+  #analyze input[type='button'] {
+    grid-column: 3 / -1;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer input[type='text'] {
+    width: 100%;
+  }
+}
+
+/* very  small device  */
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100% !important;
+    padding: 0rem 1rem !important;
+  }
+  #analyze {
+    grid-template-columns: repeat(2, 140px);
+  }
+  #analyze input[type='button'] {
+    grid-column: 2 / -1;
+  }
+  .strategyList {
+    width: 95%;
+  }
+  .singlePeople {
+    text-align: center;
+  }
+  .socialIcon {
+    justify-content: center;
+    align-items: center;
+  }
+}
